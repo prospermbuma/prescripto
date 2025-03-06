@@ -25,7 +25,7 @@ const Navbar = () => {
                 </NavLink>
             </ul>
             <div>
-                 <button>Create Account</button>
+                <button>Create Account</button>
             </div>
         </div>
     )
