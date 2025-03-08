@@ -38,7 +38,7 @@ const TopDoctors = () => {
                     </div>
                 ))}
             </div>
-            <button className='bg-blue-50 text-gray-600 px-12 py-3 rounded-full mt-10 cursor-pointer hover:bg-primary hover:text-white transition-all duration-300'>More</button>
+            <button className='bg-blue-50 text-gray-600 px-12 py-3 rounded-full mt-10 cursor-pointer hover:bg-primary hover:text-white transition-all duration-400'>More</button>
         </div>
     )
 }
