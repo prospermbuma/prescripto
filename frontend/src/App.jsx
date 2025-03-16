@@ -10,11 +10,12 @@ import Appointment from './pages/Appointment'
 import Login from './pages/Login'
 import NotFound from './pages/NotFound'
 import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 
 const App = () => {
   return (
     <div className='mx-4 sm:mx-[10%]'>
-      <Navbar/>
+      <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
@@ -27,6 +28,7 @@ const App = () => {
         <Route path='/login' element={<Login />} />
         <Route path='*' element={<NotFound />} />
       </Routes>
+      <Footer />
     </div>
   )
 }
