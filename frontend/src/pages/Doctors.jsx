@@ -55,8 +55,8 @@ const Doctors = () => {
               </div>
             ))
           ) : (
-            <div className='w-full h-auto rounded-2xl py-3 sm:py-4 text-center text-white bg-primary absolute'>
-              <p className='text-md sm:text-xl'>No Doctors.</p>
+            <div className='w-full h-auto rounded-2xl py-3 sm:py-4 text-center border border-blue-100 text-primary bg-blue-50 absolute'>
+              <p className='text-md sm:text-xl'><b>No Doctors.</b></p>
             </div>
           )
           }
