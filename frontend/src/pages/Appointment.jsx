@@ -133,6 +133,7 @@ const Appointment = () => {
             ))
           }
         </div>
+        <button className='bg-primary text-white text-sm font-bold px-14 py-3 rounded-full my-6 cursor-pointer border border-blue-100 hover:text-primary hover:bg-blue-50 transition-all duration-300'>Book an appointment</button>
       </div>
 
     </div>
