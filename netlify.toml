@@ -1,1 +1,2 @@
-publish = "frontend"
+[build]
+  publish = "frontend"
