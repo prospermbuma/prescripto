@@ -27,7 +27,7 @@ const Doctors = () => {
 
   return (
     <div>
-      <p className='text-gray-600 mt-9'>Browse through the doctors speciality. </p>
+      <p className='text-gray-600 mt-10'>Browse through the doctors speciality. </p>
       <div className='flex flex-col sm:flex-row items-start gap-5 mt-5'>
         {/* ====== LEFT ===== */}
         <div className='flex flex-col gap-4 text-sm text-gray-600'>
