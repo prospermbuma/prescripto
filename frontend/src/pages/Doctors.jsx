@@ -42,8 +42,8 @@ const Doctors = () => {
         {/* ====== RIGHT ===== */}
         <div className='w-full grid grid-cols-auto gap-4 gap-y-6 relative'>
           {filterDoc.length > 0 ? (
-            filterDoc.map((item, index) => (
-              <div onClick={() => { navigate(`/appointment/${item._id}`); scrollTo(0, 0); }} className='border border-blue-200 rounded-xl overflow-hidden cursor-pointer hover:translate-y-[-10px] transition-all duration-500' key={index}>
+            filterDoc.map((item) => (
+              <div onClick={() => { navigate(`/appointment/${item._id}`); scrollTo(0, 0); }} className='border border-blue-200 rounded-xl overflow-hidden cursor-pointer hover:translate-y-[-10px] transition-all duration-500' key={item._id}>
                 <img className='bg-blue-50' src={item.image} alt="" />
                 <div className='p-4'>
                   <div className='flex items-center gap-2 text-sm text-center text-green-500'>
