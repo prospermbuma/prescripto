@@ -24,13 +24,11 @@ const Login = () => {
         <p>Please {state === 'Sign Up' ? 'sign up' : 'login'} to book appointment</p>
         {/* == Full Name == */}
         {
-          state === 'Sign Up'
-            ?
-            <div className='w-full'>
-              <p>Full Name</p>
-              <input className='border border-zinc-300 rounded w-full p-2 mt-1 outline-0' type="text" onChange={(e) => setName(e.target.name)} value={name} required />
-            </div>
-            : ''
+          state === 'Sign Up' &&
+          <div className='w-full'>
+            <p>Full Name</p>
+            <input className='border border-zinc-300 rounded w-full p-2 mt-1 outline-0' type="text" onChange={(e) => setName(e.target.name)} value={name} required />
+          </div>
         }
         {/* == Email == */}
         <div className='w-full'>
@@ -45,8 +43,8 @@ const Login = () => {
         <button className='bg-primary text-white w-full py-2 rounded-md text-base cursor-pointer border border-blue-100 hover:text-primary hover:bg-blue-50 transition-all duration-300'>{state === 'Sign Up' ? 'Create Account' : 'Login'}</button>
         {
           state === 'Sign Up'
-            ? <p>Already have an account? <span onClick={() => setState('Login')} className='text-zinc-800 cursor-pointer'>Login here</span></p>
-            : <p>Don't have an account? <span onClick={() => setState('Sign Up')} className='text-zinc-800 cursor-pointer'>Sign Up here</span></p>
+            ? <p>Already have an account? <span onClick={() => setState('Login')} className='text-primary cursor-pointer'>Login here</span></p>
+            : <p>Don't have an account? <span onClick={() => setState('Sign Up')} className='text-primary cursor-pointer'>Sign Up here</span></p>
         }
       </div>
     </form>
