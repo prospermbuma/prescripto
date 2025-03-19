@@ -10,8 +10,10 @@ const PORT = process.env.PORT || 4000;
 app.use(express.json());
 app.use(cors());
 
-// Endpoints
-app.get('/api/');
+// API Endpoints
+app.get('/', (req, res) => {
+    res.send('API WORKING');
+});
 
-// Listening the app
-app.listen(PORT, console.log(`Server is running on port ${PORT}`));
+// Starting the app
+app.listen(PORT, () => console.log(`Server is running on port ${PORT}`));
